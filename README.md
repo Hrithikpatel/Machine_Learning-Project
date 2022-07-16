@@ -7,15 +7,22 @@
 4. [GIT cli](https://git-scm.com/downloads)
 
 Creating conda Enviornmentconda
-
+```
 conda create -p <venv> <python==version> -y
 
+```
+Activating Conda
 
+```
 conda activate <venv>/
 
+```
 
+Installing requirements.txt file
+```
 pip install -r requirements.txt
 
+```
 
 To Add files to git
 
