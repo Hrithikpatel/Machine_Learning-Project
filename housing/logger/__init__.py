@@ -1,6 +1,7 @@
 import logging
 from datetime import datetime
 import os
+from housing.constant import *
 
 log_dir="housing_logs"
 
@@ -10,7 +11,7 @@ log_file=f"logs_{time}.log"
 
 os.makedirs(log_dir,exist_ok=True)
 
-log_file_path=os.path.join(log_dir,log_file)
+log_file_path=os.path.join(ROOT_DIR,log_dir,log_file)
 
 
 logging.basicConfig(filename=log_file_path,

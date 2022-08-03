@@ -6,7 +6,7 @@ from typing import List
 
 project_name="housing prediction"
 author="Hrithik Patel"
-version="0.0.4"
+version="0.0.5"
 license="Apache"
 requirement_file='requirements.txt'
 

@@ -1,7 +1,7 @@
 
 from flask import Flask
 from housing.logger import logging
-from housing.exception import housing_exception
+from housing.exception import HousingException
 import sys
 
 app=Flask(__name__)
@@ -11,7 +11,7 @@ def index():
     try:
         raise Exception("We are testing custom exception")
     except Exception as e:
-        housing=housing_exception(e,sys)
+        housing=HousingException(e,sys)
         logging.info(housing.error_message)
         logging.info("Testing Logging Module")
     return "CI CD Pipeline has been eastablish"
