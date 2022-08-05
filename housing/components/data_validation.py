@@ -1,6 +1,4 @@
 
-
-
 from housing.logger import logging
 from housing.exception import HousingException
 from housing.entity.config_entity import DataValidationConfig
@@ -147,4 +145,3 @@ class DataValidation:
     def __del__(self):
         logging.info(f"{'>>'*30}Data Valdaition log completed.{'<<'*30} \n\n")
         
-
